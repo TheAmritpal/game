@@ -1,0 +1,56 @@
+:root {
+  --main-primary: #FFEBD8;
+  --main-secondary: #C7DCA7;
+  --main-warning: #FFC5C5;
+  --main-danger: #89B9AD;
+}
+
+@font-face {
+  font-family: "RethinkSans";
+  src: local("RethinkSans"),
+    url("./fonts/RethinkSans.ttf") format("truetype");
+}
+
+body {
+  background: var(--main-primary);
+  box-sizing: border-box;
+  font-family: "RethinkSans";
+  margin: 0;
+  padding: 0 300px;
+  display: grid;
+  place-content: center;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 20%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 800px;
+}
+
+.layout {
+  display: block;
+  margin-top: 9%;
+  text-align: center;
+}
+
+.item {
+  background: var(--main-danger);
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.emoji {
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;
+}
