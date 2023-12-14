@@ -41,8 +41,18 @@ body {
   text-align: center;
 }
 
-.item {
+.danger-bg {
   background: var(--main-danger);
+  transition: background-color 200ms ease-in;
+}
+
+.warning-bg {
+  background: var(--main-warning);
+  transition: background-color 200ms ease-in;
+}
+
+.item {
+  cursor: pointer;
   display: inline-block;
   height: 100px;
   width: 100px;
@@ -50,7 +60,26 @@ body {
 }
 
 .emoji {
-  font-size: 30px;
+  font-size: 50px;
   vertical-align: middle;
   line-height: 2;
+}
+
+.colorTransparent {
+  color: transparent;
+}
+
+@media screen and (min-width: 50px) and (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+
+  .item {
+    height: 60px;
+    width: 60px;
+  }
+
+  .emoji {
+    font-size: 30px;
+  }
 }
